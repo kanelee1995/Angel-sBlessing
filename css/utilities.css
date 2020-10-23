@@ -20,6 +20,7 @@
 
 .btn:hover {
     opacity: 0.9;
+    transition: 0.9s ease-in-out;
 }
 
 .btn-primary, .bg-primary {
@@ -42,6 +43,23 @@
 .btn-outline {
     background: transparent;
     border: 1px solid #fff;
+}
+
+
+/* Navbar hover effect */
+
+.link-hover-smooth::after {
+  content: '';
+  display: block;
+  width: 0;
+  margin: 3px 0;
+  height: 2px;
+  background: #00cccc;
+  transition: width 0.2s;
+}
+
+.link-hover-smooth:hover::after {
+  width: 100%;
 }
 
 /* Flex items */

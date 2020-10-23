@@ -61,10 +61,6 @@ img {
     margin: 0 5px;
 }
 
-.navbar a:hover {
-    border-bottom: #00cccc 2px solid;
-}
-
 .navbar ul {
     display: flex;
 }
@@ -231,12 +227,20 @@ img {
     .navbar {
         flex-direction: column;
         height: 120px;
-        padding: 20px;
+        padding: 20px;   
     }
+
+    .middle {
+      border-top: #333 1px solid;
+      border-bottom: #333 1px solid;
+      border-left: none;
+      border-right: none;
+  }
 
     .navbar a {
         padding: 10px 10px;
         margin: 0 3px;
+        font-size: small;
     }
 
     .flex-items {
